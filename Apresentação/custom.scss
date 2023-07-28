@@ -1,0 +1,73 @@
+/*-- scss:defaults --*/
+
+$body-bg: #ebebeb;
+$body-color: #1932c8;
+$link-color: #4b2d32;
+$presentation-heading-font: "Suzano Display", serif !default;
+$presentation-heading-color: #00c85a !default;
+
+// fonts
+$font-family-sans-serif: "Suzano Text Light", serif !default;
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+.reveal .slide-logo {
+  display: block;
+  position: fixed;
+  bottom: unset !important;
+  left: unset !important;
+  margin-right: 20px;
+  top: 20px;
+  height: 50px !important;
+  width: 100p !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+.slide-number,
+.reveal.has-logo .slide-number {
+  bottom: 14px !important;
+  right: 50px !important;
+  top: unset !important;
+  color: #777777 !important;
+}
+
+#title-slide {
+  .title {
+    color: #00c85a;
+    text-shadow: 2px 2px 4px #00000075;
+  }
+
+  .subtitle {
+    color: #00c85a;
+    font-family: "Suzano Display";
+    text-shadow: 2px 2px 4px #00000075;
+  }
+
+  .quarto-title-author-name {
+    font-family: "Suzano Display";
+  }
+
+  .quarto-title-affiliation {
+    font-family: "Suzano Display";
+  }
+
+  .date {
+    font-family: "Suzano Display";
+  }
+}
+
+.reveal .footer {
+  color: #25242456 !important;
+}
+
+.reveal .slide aside,
+.reveal .slide div.aside {
+  font-size: 0.5em;
+  color: #1932c8;
+}
