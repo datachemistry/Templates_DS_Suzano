@@ -1,0 +1,118 @@
+---
+title: "Título do projeto"
+subtitle: "Unidade Industrial"
+author:
+  - name: "Nome do autor"
+    affiliation: Cientista de Dados Sr.
+    
+date: 03/07/2005
+date-format: long
+lang: pt-br 
+format:
+  revealjs: 
+    theme: [default, custom.scss]
+    logo: img/logo_bg.svg
+    footer: "Tribo Florestal - Digitaltech"
+    slide-number: true
+    incremental: true
+    scrollable: true
+    transition: fade
+    background-transition: fade
+   
+title-slide-attributes:
+    data-background-image: img/folha_bg.jpg
+    data-background-size: cover
+    data-background-opacity: "0.8"
+---
+
+
+## Título do slide
+
+- Green ^[A footnote]
+- Brown
+- Purple
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+
+## Duas Colunas
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Texto da esquerda
+:::
+
+::: {.column width="50%"}
+Texto da direita
+:::
+
+::::
+
+## Slide com abas
+
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+:::
+
+## Gráficos
+
+```{python}
+#| code-line-numbers: "|6|9"
+#| echo: true
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+## Gráfico Interativo
+
+```{python}
+
+import altair as alt
+import pandas as pd
+
+cars = pd.read_csv('CARS.csv')
+
+alt.Chart(cars).mark_point().encode(
+    x='Horsepower',
+    y='Weight',
+    color='Origin',
+).properties(
+    width=800,
+    height=500
+).interactive()
+
+```
+
+## Conteudo animado
+
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Animating content
+:::
+
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: green;"}
+Animating content
+:::

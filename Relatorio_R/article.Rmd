@@ -1,0 +1,78 @@
+---
+title: Projeto de Ciência de Dados
+subtitle: Subtítulo do projeto
+author:
+  - name: Thiago Yuki
+    affiliations:
+      - name: Digitaltech
+        department: Tribo Florestal
+  - name: Gabriel Duraes
+    affiliations:
+      - name: Digitaltech
+        department: Tribo Florestal
+  - name: Ítalo Cegatta
+    affiliations:
+      - name: Digitaltech
+        department: Tribo Florestal        
+  - name: Flander Gonçalves
+    affiliations:
+      - name: DTI
+        department: Manejo Experimental
+cover: images/logo.png
+editor: source
+format:
+  pdf:
+    documentclass: scrbook
+    classoption: ["oneside", "open=any"]
+    number-sections: true
+    template-partials:
+      - "before-body.tex"
+      - "_titlepage.tex" 
+    include-in-header: 
+      - "in-header.tex"
+    toc: true
+    toc-title: Índice
+    titlepage-geometry: 
+      - top=3in
+      - bottom=1in
+      - right=1in
+      - left=1in
+    title-bg-image: "images/corner-bg.png"
+    title-bg-location: "UL"
+    title-bg-size: 0.5
+bibliography: references.bib
+csl: abntex2.csl
+---
+
+
+# Introdução
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot. @knuth84
+
+
+# Referências
+
+::: {#refs}
+::: 
